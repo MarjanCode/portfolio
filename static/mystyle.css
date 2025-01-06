@@ -8,8 +8,9 @@ body {
 
 #lang-header {
     float: left;
-    background-color: red;
-
+    background-color: #95c4f0;
+    height: 0%;
+    float: left;
 }
 
 
