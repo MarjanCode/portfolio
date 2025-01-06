@@ -1,15 +1,20 @@
 body {
-    font: 1.1rem Arial;
+    font: 1.1rem Arial, sans-serif;
     background-color: #d8d1e8;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0;
 }
 
 #lang-header {
-    float: left;
     background-color: #e4e1eb;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
-    padding: 5px;
 }
 
 #lang-header>nav>a {
