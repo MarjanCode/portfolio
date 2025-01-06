@@ -8,11 +8,22 @@ body {
 
 #lang-header {
     float: left;
-    background-color: #D1E8E4;
+    background-color: #e4e1eb;
     height: 0%;
     float: left;
+    padding: 5px;
+
 }
 
+#lang-header>nav>a {
+    padding: 5px;
+
+}
+
+#lang-header>nav>a:hover {
+    border-bottom: 1px solid;
+    transition: border-bottom 0.1s ease;
+}
 
 a {
     text-decoration: none;
