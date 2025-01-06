@@ -21,6 +21,14 @@ ul {
     font: bold 100% Arial;
 }
 
+.menu2 {
+    float: left;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    font: bold 100% Arial;
+}
+
 main {
     color: #023769;
     padding: 13px;
