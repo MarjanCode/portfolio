@@ -1,7 +1,6 @@
 body {
     font: 1.1rem Arial;
     margin: 0rem 4rem;
-    /* background: linear-gradient(90deg, rgba(255, 245, 225, 1) 0%, rgba(168, 154, 128, 1) 100%); */
     background-color: #d8d1e8;
 }
 
@@ -16,7 +15,6 @@ ul {
 
 .menu {
     float: left;
-    display: inline-block;
     padding: 10px;
     text-align: center;
     margin: 5px;
@@ -26,7 +24,6 @@ ul {
 main {
     color: #023769;
     padding: 13px;
-    display: inline-block;
     float: left;
 }
 
@@ -50,7 +47,6 @@ li:active {
 
 .goto {
     display: inline-block;
-    float: left;
     position: fixed;
     padding-left: 0px;
 }
@@ -77,7 +73,7 @@ section {
 }
 
 nav>ul {
-    background-color: #ffbdc7;
+    background-color: #e4e1eb;
 }
 
 
