@@ -6,3 +6,6 @@ app = Flask(__name__)
 def home():
     lang = request.args.get("lang", "per")  # Default to Persian
     return render_template("index.html", lang=lang)
+
+if __name__ == "__main__":
+    app.run(debug=True)
