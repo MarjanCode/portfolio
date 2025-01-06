@@ -7,7 +7,9 @@ body {
 }
 
 #lang-header {
-    
+    float: left;
+    color: red;
+
 }
 
 
