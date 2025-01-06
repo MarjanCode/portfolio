@@ -4,6 +4,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
-
-
+    lang = request.args.get("lang", "per")  # Default to Persian
+    return render_template("index.html", lang=lang)

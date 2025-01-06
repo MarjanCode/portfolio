@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ 'per' if lang == 'per' else 'eng' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marjan AliYari</title>
+    <title>{% if lang == 'per' %}مرجان علی یاری{% else %}Marjan AliYari{% endif %}</title>
 </head>
 <body>
-    {% block body %}{% endblock %}
+    <header>
+        <nav>
+            <a href="/?lang=en">Persian</a>
+            <a href="/?lang=es">English</a>
+        </nav>
+    </header>
+    <main>
+        {% block body %}{% endblock %}
+    </main>
 </body>
 </html>
