@@ -7,8 +7,9 @@ body {
 }
 
 #lang-header {
-    float: left;
-    color: red;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
 
 }
 
