@@ -3,20 +3,18 @@ body {
     background-color: #d8d1e8;
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 #lang-header {
     float: left;
     background-color: #e4e1eb;
-    height: 0%;
+    height: 100%;
     padding: 5px;
 
 }
 
 #lang-header>nav>a {
     padding: 5px;
-
 }
 
 #lang-header>nav>a:hover {
