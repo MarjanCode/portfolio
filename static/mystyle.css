@@ -4,6 +4,7 @@ body {
     background-color: #d8d1e8;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 #lang-header {
@@ -98,6 +99,7 @@ aside>ul>li {
 }
 
 section {
+    
     background-color: #e4e1eb;
     padding: 15px;
 }
