@@ -2,139 +2,147 @@
 
 {% block body %}
 
-    <header>
-        {% if lang == 'per' %}<nav>
-            <ul>
-                <li class="menu2" title="صفحه اصلی"><a href="">صفحه اصلی</a></li>
-                <li class="menu2" title="پروژه ها"><a href="#">پروژه ها</a></li>
-                <li class="menu2"><a href="https://www.linkedin.com/in/marjan-aliyari/"><i class="fa fa-linkedin"></i></a></li>
-                <li class="menu2"><a href="#"><i class="fa fa-paper-plane"></i></a></li>
-                <li class="menu2"><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </nav>
-        {% else %}<nav>
-            <ul>
-                <li class="menu" title="Home"><a href="">Home</a></li>
-                <li class="menu" title="Projects"><a href="#">Projects</a></li>
-                <li class="menu" title="Linkedin"><a href="https://www.linkedin.com/in/marjan-aliyari/"><i class="fa fa-linkedin"></i></a></li>
-                <li class="menu" title="Telegram"><a href="#"><i class="fa fa-paper-plane"></i></a></li>
-                <li class="menu" title="Instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </nav>
-        {% endif %}
-    </header><br><br><br>
+    {% if lang == 'fa' %}
 
-    {% if lang == 'per' %}<main>
-        <h1>سلام <span>مرجان علی یاری</span> هستم!</h1>
-        <section class="sec2">
-            <article>
-                <header>
-                    <h2 id="link1">About me</h2>
-                </header>
-                <p>I was born on December 18, 2000, in Iran. </p>
-            </article>
-            <article>
-                <header>
-                    <h2 id="link2">Education</h2>
-                </header>
-                <p>Islamic Azad University Central Tehran Branch <br> Bachelor, Food Science and Engineering · (2019 - 2023)</p>
-            </article>
-            <article>
-                <header>
-                    <h2 id="link3">CS courses</h2>
-                </header>
-                <p>....</p>
-            </article>
-            <article>
-                <header>
-                    <h2 id="link4">Skills</h2>
-                </header>
-                <p>Raman Spectroscopy<br>
-                    Adaptability<br>
-                    Active listening<br>
-                    Teamwork<br>
-                    Self Learning<br>
-                    Computer literacy<br>
-                    Excel<br>
-                    Word<br>
-                    PowerPoint<br>
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2 id="link5">Languages</h2>
-                </header>
-                <p>Persian (Native)<br>
-                    English (Limited Working)<br>
-                </p>
-            </article>
-        </section>
-    </main>
+        <header class="container-fluid">
+            <nav>
+                <ul class="nav justify-content-end ">
+                    <li class="nav-item" title="صفحه اصلی"><a class="nav-link" href=""><h1 class="display-1">مرجان علی یاری</h1></a></li>
+                    <li class="nav-item" title="پروژه ها"><a class="nav-link" href="#">پروژه ها</a></li>
+                    <li class="nav-item" title="لینکداین"><a class="nav-link" href="https://www.linkedin.com/in/marjan-aliyari/"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="nav-item" title="تلگرام"><a class="nav-link" href="https://t.me/Marjan_AY"><i class="fa fa-paper-plane"></i></a></li>
+                    <li class="nav-item" title="اینستاگرام"><a class="nav-link" href="https://instagram.com/marjan_79"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container-fluid row text-end text-break">
+        <main class="container col-8">
+            <section>
+                <article>
+                    <header>
+                        <h3 id="link1">مهارت ها</h3>
+                    </header>
+                    <p>
+                        پایتون (پایه)<br>
+                        فلسک<br>
+                        HTML, CSS<br>
+                        SQLite3<br>
+                        (پایه) C<br>
+                        گیت<br>
+                        فوتوشاپ (پایه)<br>
+                        گوش دادن فعال<br>
+                        کار تیمی<br>
+                        خودآموزی<br>
+                        مایکروسافت آفیس<br>
+                        طیف‌شناسی رامان<br>
+                    </p>
+                </article>
+                <article>
+                    <header>
+                        <h3 id="link2">دوره ها</h3>
+                    </header>
+                    <p>CS50: Introduction to Computer Science 2024</p>
+                </article>
+                <article>
+                    <header>
+                        <h3 id="link3">تحصیلات</h3>
+                    </header>
+                    <p>دانشگاه آزاد واحد تهران مرکزی<br> (۱۳۹۸ - ۱۴۰۲) لیسانس، مهندسی صنایع غذایی</p>
+                </article>
+                <article>
+                    <header>
+                        <h3 id="link4">زبان ها</h3>
+                    </header>
+                    <p>فارسی<br>
+                        انگلیسی (محدود)<br>
+                    </p>
+                </article>
+            </section>
+        </main>
 
-        {% else %}<main>
-        <h1>Hi, It's <span>Marjan AliYari</span>!</h1>
-        <section>
-            <article>
-                <header>
-                    <h2 id="link1">About me</h2>
-                </header>
-                <p>I was born on December 18, 2000, in Iran. </p>
-            </article>
-            <article>
-                <header>
-                    <h2 id="link2">Education</h2>
-                </header>
-                <p>Islamic Azad University Central Tehran Branch <br> Bachelor, Food Science and Engineering · (2019 - 2023)</p>
-            </article>
-            <article>
-                <header>
-                    <h2 id="link3">CS courses</h2>
-                </header>
-                <p>....</p>
-            </article>
-            <article>
-                <header>
-                    <h2 id="link4">Skills</h2>
-                </header>
-                <p>Raman Spectroscopy<br>
-                    Adaptability<br>
-                    Active listening<br>
-                    Teamwork<br>
-                    Self Learning<br>
-                    Computer literacy<br>
-                    Excel<br>
-                    Word<br>
-                    PowerPoint<br>
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2 id="link5">Languages</h2>
-                </header>
-                <p>Persian (Native)<br>
-                    English (Limited Working)<br>
-                </p>
-            </article>
-        </section>
-    </main>
+        <aside class="container col-4">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#link1">مهارت ها</a></li>
+                <li class="nav-item"><a class="nav-link" href="#link2">دوره ها</a></li>
+                <li class="nav-item"><a class="nav-link" href="#link3">تحصیلات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#link4">زبان ها</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    {% else %}
+
+        <header class="container-fluid">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item" title="Home"><a class="nav-link" href=""><h1 class="display-1">Marjan AliYari</h1></a></li>
+                    <li class="nav-item" title="Projects"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item" title="Linkedin"><a class="nav-link" href="https://www.linkedin.com/in/marjan-aliyari/"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="nav-item" title="Telegram"><a class="nav-link" href="#"><i class="fa fa-paper-plane"></i></a></li>
+                    <li class="nav-item" title="Instagram"><a class="nav-link" href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="container-fluid row text-start text-break">
+        <main class="container col-8">
+            <section>
+                <article>
+                    <header>
+                        <h3 id="link1">Skills</h3>
+                    </header>
+                    <p>
+                        Python (Basics)<br>
+                        Flask<br>
+                        HTML, CSS<br>
+                        SQLite3<br>
+                        C (Basics)<br>
+                        Git<br>
+                        Adobe Photoshop (Basics)<br>
+                        Active listening<br>
+                        Teamwork<br>
+                        Self Learning<br>
+                        Microsoft Office<br>
+                        Raman Spectroscopy<br>
+                    </p>
+                </article>
+
+                <article>
+                    <header>
+                        <h3 id="link2">Courses</h3>
+                    </header>
+                    <p>CS50: Introduction to Computer Science 2024</p>
+                </article>
+
+                <article>
+                    <header>
+                        <h3 id="link3">Education</h3>
+                    </header>
+                    <p>Islamic Azad University Central Tehran Branch <br> Bachelor, Food Science and Engineering (2019 - 2023)</p>
+                </article>
+
+                <article>
+                    <header>
+                        <h3 id="link4">Languages</h3>
+                    </header>
+                    <p>
+                        Persian (Native)<br>
+                        English (Limited Working)<br>
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <aside class="container col-4">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#link1">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#link2">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#link3">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#link4">Languages</a></li>
+            </ul>
+        </aside>
+    </div>
+
     {% endif %}
 
-    <aside class="goto">
-        <ul>
-            <li class="gotol"><a href="#link1">About me</a></li>
-            <li class="gotol"><a href="#link2">Education</a></li>
-            <li class="gotol"><a href="#link3">CS courses</a></li>
-            <li class="gotol"><a href="#link4">Skills</a></li>
-            <li class="gotol"><a href="#link5">Languages</a></li>
-        </ul>
-    </aside>
-
-    <footer>
-    <!-- <ul>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-paper-plane"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-    </ul> -->
-    </footer>
 
 {% endblock %}
