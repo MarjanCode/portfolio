@@ -6,76 +6,64 @@
 
         <header class="container-fluid">
             <nav>
-                <ul class="nav justify-content-end ">
-                    <li class="nav-item" title="صفحه اصلی"><a class="nav-link" href=""><h1 class="display-1">مرجان علی یاری</h1></a></li>
-                    <li class="nav-item" title="پروژه ها"><a class="nav-link" href="#">پروژه ها</a></li>
+                <ul class="nav flex-wrap justify-content-end">
+                    <li class="nav-item" title="صفحه اصلی"><a class="nav-link" href=""><h1 class="display-3 display-md-1">مرجان علی یاری</h1></a></li>
+                    <li class="nav-item" title="پروژه ها"><a class="nav-link" href="#">پروژه ها</a></li> 
                     <li class="nav-item" title="لینکداین"><a class="nav-link" href="https://www.linkedin.com/in/marjan-aliyari/"><i class="fa fa-linkedin"></i></a></li>
                     <li class="nav-item" title="تلگرام"><a class="nav-link" href="https://t.me/Marjan_AY"><i class="fa fa-paper-plane"></i></a></li>
                     <li class="nav-item" title="اینستاگرام"><a class="nav-link" href="https://instagram.com/marjan_79"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </nav>
         </header>
-        <div class="container-fluid row text-end text-break">
-        <main class="container col-8">
-            <section>
-                <article>
-                    <header>
-                        <h3 id="link1">مهارت ها</h3>
-                    </header>
-                    <p>
-                        پایتون (پایه)<br>
-                        فلسک<br>
-                        HTML, CSS<br>
-                        SQLite3<br>
-                        (پایه) C<br>
-                        گیت<br>
-                        فوتوشاپ (پایه)<br>
-                        گوش دادن فعال<br>
-                        کار تیمی<br>
-                        خودآموزی<br>
-                        مایکروسافت آفیس<br>
-                        طیف‌شناسی رامان<br>
-                    </p>
-                </article>
-                <article>
-                    <header>
-                        <h3 id="link2">دوره ها</h3>
-                    </header>
-                    <p>CS50: Introduction to Computer Science 2024</p>
-                </article>
-                <article>
-                    <header>
-                        <h3 id="link3">تحصیلات</h3>
-                    </header>
-                    <p>دانشگاه آزاد واحد تهران مرکزی<br> (۱۳۹۸ - ۱۴۰۲) لیسانس، مهندسی صنایع غذایی</p>
-                </article>
-                <article>
-                    <header>
-                        <h3 id="link4">زبان ها</h3>
-                    </header>
-                    <p>فارسی<br>
-                        انگلیسی (محدود)<br>
-                    </p>
-                </article>
-            </section>
-        </main>
+        <div class="container-fluid text-end text-break">
+            <div class="row">
+                <main class="col-12 col-md-8">
+                    <section>
+                        <article>
+                            <header><h3 id="link1">مهارت ها</h3></header>
+                            <p>
+                                پایتون (پایه)<br>
+                                جنگو<br>
+                                فلسک<br>
+                                HTML, CSS<br>
+                                (پایه) C<br>
+                                گیت<br>
+                                کار تیمی<br>
+                                خودآموزی<br>
+                            </p>
+                        </article>
+                        <article>
+                            <header><h3 id="link2">دوره ها</h3></header>
+                            <p>CS50: Introduction to Computer Science 2024</p>
+                        </article>
+                        <article>
+                            <header><h3 id="link3">تحصیلات</h3></header>
+                            <p>دانشگاه آزاد واحد تهران مرکزی<br> (۱۳۹۸ - ۱۴۰۲) لیسانس، مهندسی صنایع غذایی</p>
+                        </article>
+                        <article>
+                            <header><h3 id="link4">زبان ها</h3></header>
+                            <p>فارسی<br>انگلیسی (محدود)<br></p>
+                        </article>
+                    </section>
+                </main>
 
-        <aside class="container col-4">
-            <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="#link1">مهارت ها</a></li>
-                <li class="nav-item"><a class="nav-link" href="#link2">دوره ها</a></li>
-                <li class="nav-item"><a class="nav-link" href="#link3">تحصیلات</a></li>
-                <li class="nav-item"><a class="nav-link" href="#link4">زبان ها</a></li>
-            </ul>
-        </aside>
-    </div>
+                <aside class="col-12 col-md-4 custom-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#link1">مهارت ها</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#link2">دوره ها</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#link3">تحصیلات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#link4">زبان ها</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
 
     {% else %}
 
         <header class="container-fluid">
             <nav>
-                <ul class="nav">
-                    <li class="nav-item" title="Home"><a class="nav-link" href=""><h1 class="display-1">Marjan AliYari</h1></a></li>
+                <ul class="nav flex-wrap justify-content-start">
+                    <li class="nav-item" title="Home"><a class="nav-link" href=""><h1 class="display-3 display-md-1">Marjan AliYari</h1></a></li>
                     <li class="nav-item" title="Projects"><a class="nav-link" href="#">Projects</a></li>
                     <li class="nav-item" title="Linkedin"><a class="nav-link" href="https://www.linkedin.com/in/marjan-aliyari/"><i class="fa fa-linkedin"></i></a></li>
                     <li class="nav-item" title="Telegram"><a class="nav-link" href="#"><i class="fa fa-paper-plane"></i></a></li>
@@ -83,64 +71,48 @@
                 </ul>
             </nav>
         </header>
-    <div class="container-fluid row text-start text-break">
-        <main class="container col-8">
-            <section>
-                <article>
-                    <header>
-                        <h3 id="link1">Skills</h3>
-                    </header>
-                    <p>
-                        Python (Basics)<br>
-                        Flask<br>
-                        HTML, CSS<br>
-                        SQLite3<br>
-                        C (Basics)<br>
-                        Git<br>
-                        Adobe Photoshop (Basics)<br>
-                        Active listening<br>
-                        Teamwork<br>
-                        Self Learning<br>
-                        Microsoft Office<br>
-                        Raman Spectroscopy<br>
-                    </p>
-                </article>
+        <div class="container-fluid text-start text-break">
+            <div class="row">
+                <main class="col-12 col-md-8">
+                    <section>
+                        <article>
+                            <header><h3 id="link1">Skills</h3></header>
+                            <p>
+                                Python (Basics)<br>
+                                Django<br> 
+                                Flask<br>
+                                HTML, CSS<br>
+                                C (Basics)<br>
+                                Git<br>
+                                Teamwork<br>
+                                Self Learning<br>
+                            </p>
+                        </article>
+                        <article>
+                            <header><h3 id="link2">Courses</h3></header>
+                            <p>CS50: Introduction to Computer Science 2024</p>
+                        </article>
+                        <article>
+                            <header><h3 id="link3">Education</h3></header>
+                            <p>Islamic Azad University Central Tehran Branch <br> Bachelor, Food Science and Engineering (2019 - 2023)</p>
+                        </article>
+                        <article>
+                            <header><h3 id="link4">Languages</h3></header>
+                            <p>Persian (Native)<br>English (Limited Working)<br></p>
+                        </article>
+                    </section>
+                </main>
 
-                <article>
-                    <header>
-                        <h3 id="link2">Courses</h3>
-                    </header>
-                    <p>CS50: Introduction to Computer Science 2024</p>
-                </article>
-
-                <article>
-                    <header>
-                        <h3 id="link3">Education</h3>
-                    </header>
-                    <p>Islamic Azad University Central Tehran Branch <br> Bachelor, Food Science and Engineering (2019 - 2023)</p>
-                </article>
-
-                <article>
-                    <header>
-                        <h3 id="link4">Languages</h3>
-                    </header>
-                    <p>
-                        Persian (Native)<br>
-                        English (Limited Working)<br>
-                    </p>
-                </article>
-            </section>
-        </main>
-
-        <aside class="container col-4">
-            <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="#link1">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#link2">Courses</a></li>
-                <li class="nav-item"><a class="nav-link" href="#link3">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#link4">Languages</a></li>
-            </ul>
-        </aside>
-    </div>
+                <aside class="col-12 col-md-4 custom-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#link1">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#link2">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#link3">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#link4">Languages</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
 
     {% endif %}
 
