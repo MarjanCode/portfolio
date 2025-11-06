@@ -1,8 +1,100 @@
-a {
-    text-decoration: none;
+body {
+  background: #a192c9;
+  font-family: 'Vazir', sans-serif;
+  padding: 20px;
 }
 
-/* حالت استیکی فقط در دسکتاپ باشه */
+/* TYPOGRAPHY */
+p {
+  line-height: 1.9;
+  margin: 0;
+}
+
+.display-3 {
+  font-weight: 700;
+}
+
+h3 {
+  color: #6d5ba8;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* LINKS & NAVIGATION */
+.nav-link, a {
+  color: #172f80;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.nav-link:hover, a:hover {
+  color: rgb(20, 0, 36);
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+}
+
+/* SIDEBAR */
+aside {
+  border-radius: 8px;
+}
+
+html[lang="fa"] aside .nav-link {
+  color: #172f80;
+  padding: 0.75rem 2rem 0.75rem 0;
+  border-radius: 6px;
+}
+
+html[lang="en"] aside .nav-link {
+  color: #172f80;
+  padding: 0.75rem 0 0.75rem 2rem;
+  border-radius: 6px;
+}
+
+html[lang="fa"] .flex-column {
+  padding-left: 0;  
+}
+
+html[lang="en"] .flex-column {
+  padding-right: 0;  
+}
+
+/* ARTICLES */
+html[lang="en"] article {
+  width: 600px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 10px solid #172f80;
+  background: #bab3ce;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+html[lang="en"] article:hover {
+  border-left-color: #a192c9;
+  transform: translateX(5px);
+}
+
+html[lang="fa"] article {
+  width: 600px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-right: 10px solid #172f80;
+  background: #bab3ce;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+html[lang="fa"] article:hover {
+  border-right-color: #a192c9;
+  transform: translateX(5px);
+}
+
+/* UTILITY CLASSES */
+.min-width-150 {
+  min-width: 150px;
+}
+
+/* RESPONSIVE */
 .custom-sticky {
   position: static;
 }
@@ -14,13 +106,3 @@ a {
     height: fit-content;
   }
 }
-
-
-/* ul {
-    list-style-type: none;
-}
-
-nav {
-    direction: text-end;
-} */
-
