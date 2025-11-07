@@ -1,38 +1,23 @@
+/* BASE */
 body {
   background: #a192c9;
   font-family: 'Vazir', sans-serif;
   padding: 20px;
 }
 
-/* TYPOGRAPHY */
-article {
-  max-width: 100%;
-}
-
-p {
-  line-height: 1.9;
-  margin: 0;
-}
-
-html[lang="fa"] p {
-  font-size: clamp(0.79rem, 1vw + 0.5rem, 1.1rem);
-}
-
-html[lang="en"] p {
-  font-size: clamp(0.78rem, 1vw + 0.5rem, 1.1rem);
-}
-
+/* HEADER */
 .display-3 {
   font-weight: 700;
 }
 
-h3 {
-  color: #6d5ba8;
-  margin-bottom: 1rem;
-  font-weight: 600;
+@media (max-width: 768px) {
+  [lang="fa"] header .nav .nav-item:last-child {
+    order: -1;
+    text-align: center;
+  }
 }
 
-/* LINKS & NAVIGATION */
+/* HEADER & ASIDE */
 .nav-link, a {
   color: #172f80;
   transition: 0.2s;
@@ -48,6 +33,18 @@ h3 {
 /* SIDEBAR */
 aside {
   border-radius: 8px;
+}
+
+.custom-sticky {
+  position: static;
+}
+
+@media (min-width: 768px) {
+  .custom-sticky {
+    position: sticky;
+    top: 1rem;
+    height: fit-content;
+  }
 }
 
 html[lang="fa"] aside .nav-link {
@@ -71,6 +68,24 @@ html[lang="en"] .flex-column {
 }
 
 /* ARTICLES */
+p {
+  line-height: 1.9;
+  margin: 0;
+}
+
+h3 {
+  color: #6d5ba8;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+html[lang="fa"] p {
+  font-size: clamp(0.79rem, 1vw + 0.5rem, 1.1rem);
+}
+
+html[lang="en"] p {
+  font-size: clamp(0.78rem, 1vw + 0.5rem, 1.1rem);
+}
 
 html[lang="en"] article {
   max-width: 600px;
@@ -108,26 +123,5 @@ html[lang="fa"] article:hover {
 @media (min-width: 768px) {
   .min-width-150 {
     min-width: 150px;
-  }
-}
-
-@media (max-width: 768px) {
-  [lang="fa"] header .nav .nav-item:last-child {
-    order: -1;
-    text-align: center;
-  }
-}
-
-
-/* RESPONSIVE */
-.custom-sticky {
-  position: static;
-}
-
-@media (min-width: 768px) {
-  .custom-sticky {
-    position: sticky;
-    top: 1rem;
-    height: fit-content;
   }
 }
