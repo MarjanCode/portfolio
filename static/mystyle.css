@@ -5,9 +5,21 @@ body {
 }
 
 /* TYPOGRAPHY */
+article {
+  max-width: 100%;
+}
+
 p {
   line-height: 1.9;
   margin: 0;
+}
+
+html[lang="fa"] p {
+  font-size: clamp(0.79rem, 1vw + 0.5rem, 1.1rem);
+}
+
+html[lang="en"] p {
+  font-size: clamp(0.78rem, 1vw + 0.5rem, 1.1rem);
 }
 
 .display-3 {
@@ -59,8 +71,10 @@ html[lang="en"] .flex-column {
 }
 
 /* ARTICLES */
+
 html[lang="en"] article {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-left: 10px solid #172f80;
@@ -75,7 +89,8 @@ html[lang="en"] article:hover {
 }
 
 html[lang="fa"] article {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-right: 10px solid #172f80;
@@ -90,9 +105,19 @@ html[lang="fa"] article:hover {
 }
 
 /* UTILITY CLASSES */
-.min-width-150 {
-  min-width: 150px;
+@media (min-width: 768px) {
+  .min-width-150 {
+    min-width: 150px;
+  }
 }
+
+@media (max-width: 768px) {
+  [lang="fa"] header .nav .nav-item:last-child {
+    order: -1;
+    text-align: center;
+  }
+}
+
 
 /* RESPONSIVE */
 .custom-sticky {
