@@ -1,4 +1,4 @@
-# Marjan AliYari Portfolio
+# Portfolio
 
 Personal portfolio website built with **Flask**, showcasing skills and background.
 
